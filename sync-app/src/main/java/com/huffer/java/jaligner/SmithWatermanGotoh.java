@@ -16,10 +16,10 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-package com.example.demo.jaligner;
+package com.huffer.java.jaligner;
 
 
-import com.example.demo.jaligner.matrix.Matrix;
+import com.huffer.java.jaligner.matrix.Matrix;
 
 /**
  * An implementation of the Smith-Waterman algorithm with Gotoh's improvement

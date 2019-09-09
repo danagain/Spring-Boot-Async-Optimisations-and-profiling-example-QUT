@@ -1,5 +1,5 @@
 
-package com.example.demo.jaligner;
+package com.huffer.java.jaligner;
 
 /**
  * A cell in a similarity matrix, to hold row, column and score.

@@ -1,4 +1,4 @@
-package com.example.demo.qut;
+package com.huffer.java.qut;
 
 import edu.au.jacobi.pattern.Match;
 import edu.au.jacobi.pattern.Series;

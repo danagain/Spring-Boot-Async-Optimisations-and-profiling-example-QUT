@@ -1,4 +1,4 @@
-package com.example.demo.qut;
+package com.huffer.java.qut;
 
 import java.io.*;
 import java.util.*;

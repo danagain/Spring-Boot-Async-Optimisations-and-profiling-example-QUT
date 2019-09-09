@@ -1,4 +1,4 @@
-package com.example.demo.qut;
+package com.huffer.java.qut;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

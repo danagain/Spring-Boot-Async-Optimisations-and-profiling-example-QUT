@@ -1,13 +1,17 @@
-package com.example.demo.qut;
+package com.huffer.java.qut;
 
-import com.example.demo.jaligner.BLOSUM62;
-import com.example.demo.jaligner.Sequence;
-import com.example.demo.jaligner.SmithWatermanGotoh;
-import com.example.demo.jaligner.matrix.Matrix;
+import com.huffer.java.jaligner.BLOSUM62;
+import com.huffer.java.jaligner.Sequence;
+import com.huffer.java.jaligner.SmithWatermanGotoh;
+import com.huffer.java.jaligner.matrix.Matrix;
 import edu.au.jacobi.pattern.*;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.stereotype.Component;
+
 import java.io.*;
 import java.util.*;
 
+@Component
 public class Sequential
 {
     private static HashMap<String, Sigma70Consensus> consensus = new HashMap<>();
@@ -96,10 +100,12 @@ public class Sequential
         return record;
     }
 
-    private static void run() throws IOException
-    {             
-        List<Gene> referenceGenes = ParseReferenceGenes("../referenceGenes.list");
-        for (String filename : ListGenbankFiles("../Ecoli"))
+    public static void run() throws IOException
+    {
+        String RESOURCES_PATH = System.getProperty("user.dir") + "/src/main/resources";
+        List<Gene> referenceGenes = ParseReferenceGenes(new ClassPathResource("referenceGenes.list")
+                .getFile().getAbsolutePath());
+        for (String filename : ListGenbankFiles(RESOURCES_PATH + "/Ecoli"))
         {
             System.out.println(filename);
             GenbankRecord record = Parse(filename);
@@ -123,9 +129,4 @@ public class Sequential
         for (Map.Entry<String, Sigma70Consensus> entry : consensus.entrySet())
            System.out.println(entry.getKey() + " " + entry.getValue());
     }
-
-//    public static void main(String[] args) throws FileNotFoundException, IOException
-//    {
-//        run();
-//    }
 }

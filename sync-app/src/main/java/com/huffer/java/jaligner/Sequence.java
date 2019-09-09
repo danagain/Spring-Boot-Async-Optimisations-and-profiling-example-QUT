@@ -1,4 +1,4 @@
-package com.example.demo.jaligner;
+package com.huffer.java.jaligner;
 
 import java.io.Serializable;
 

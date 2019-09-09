@@ -16,7 +16,7 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-package com.example.demo.jaligner.util;
+package com.huffer.java.jaligner.util;
 
 import java.net.JarURLConnection;
 import java.net.URL;
