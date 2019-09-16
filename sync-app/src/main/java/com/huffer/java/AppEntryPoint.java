@@ -20,14 +20,14 @@ public class AppEntryPoint implements ApplicationListener<ApplicationReadyEvent>
     public void onApplicationEvent(final ApplicationReadyEvent event) {
         try {
             LOGGER.info("AppEntryPoint :: onApplicationEvent() :: Application Starting");
-            TimeUnit.SECONDS.sleep(30); // Timeout to hook in JProfiler
+//            TimeUnit.SECONDS.sleep(30); // Timeout to hook in JProfiler
             long startTime = System.nanoTime();
             Sequential.run();
             LOGGER.info("AppEntryPoint :: onApplicationEvent() :: Application Ending");
             long endTime   = System.nanoTime();
             long totalTime = endTime - startTime;
             System.out.println(totalTime);
-        } catch (IOException | InterruptedException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

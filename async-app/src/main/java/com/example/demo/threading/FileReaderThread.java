@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.List;
 
 @Component
-@Scope("prototype")
+@Scope("prototype") // Bean with scope protoscope returns a new instance of the class with each get bean call
 public class FileReaderThread extends Thread implements Runnable {
 
     @Autowired

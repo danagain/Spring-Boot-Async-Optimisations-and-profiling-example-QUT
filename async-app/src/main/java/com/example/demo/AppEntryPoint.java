@@ -25,7 +25,7 @@ public class AppEntryPoint implements ApplicationListener<ApplicationReadyEvent>
     public void onApplicationEvent(final ApplicationReadyEvent event) {
         try {
             LOGGER.info("AppEntryPoint :: onApplicationEvent() :: Application Starting");
-            TimeUnit.SECONDS.sleep(30);
+            TimeUnit.SECONDS.sleep(0);
             sequential.run();
             LOGGER.info("AppEntryPoint :: onApplicationEvent() :: Application Ending");
         } catch (IOException | InterruptedException e) {
