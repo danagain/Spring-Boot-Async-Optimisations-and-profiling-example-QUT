@@ -1,9 +1,9 @@
-package com.huffer.java.qut;
+package com.huffer.assignment.qut;
 
-import com.huffer.java.jaligner.BLOSUM62;
-import com.huffer.java.jaligner.Sequence;
-import com.huffer.java.jaligner.SmithWatermanGotoh;
-import com.huffer.java.jaligner.matrix.Matrix;
+import com.huffer.assignment.jaligner.BLOSUM62;
+import com.huffer.assignment.jaligner.Sequence;
+import com.huffer.assignment.jaligner.SmithWatermanGotoh;
+import com.huffer.assignment.jaligner.matrix.Matrix;
 import edu.au.jacobi.pattern.*;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;

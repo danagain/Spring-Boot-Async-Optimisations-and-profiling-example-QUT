@@ -1,4 +1,4 @@
-package com.huffer.java.jaligner;
+package com.huffer.assignment.jaligner;
 
 /**
  * Traceback directions.

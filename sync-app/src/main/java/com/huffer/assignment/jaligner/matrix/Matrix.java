@@ -1,5 +1,5 @@
 /*
- * $Id: Matrix.java,v 1.2 2005/04/14 14:44:42 ahmed Exp $
+ * $Id: Matrix.assignment,v 1.2 2005/04/14 14:44:42 ahmed Exp $
  * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -16,7 +16,7 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-package com.huffer.java.jaligner.matrix;
+package com.huffer.assignment.jaligner.matrix;
 
 import java.io.Serializable;
 

@@ -48,7 +48,7 @@ public class Sequential
     }
 
                     
-    private synchronized static List<Gene> ParseReferenceGenes(String referenceFile) throws FileNotFoundException, IOException
+    private synchronized static List<Gene> ParseReferenceGenes(String referenceFile) throws IOException
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(referenceFile)));
         List<Gene> referenceGenes = new ArrayList<>();
@@ -137,6 +137,5 @@ public class Sequential
             myThread.setReferenceGenes(referenceGenes);
             taskExecutor.execute(myThread);
         }
-
     }
 }

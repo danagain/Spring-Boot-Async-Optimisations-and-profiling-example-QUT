@@ -1,4 +1,4 @@
-package com.huffer.java.qut;
+package com.huffer.assignment.qut;
 
 import java.io.*;
 import java.util.*;

@@ -1,9 +1,9 @@
-package com.huffer.java.jaligner;
+package com.huffer.assignment.jaligner;
 
 
 
-import com.huffer.java.jaligner.matrix.Matrix;
-import com.huffer.java.jaligner.util.Commons;
+import com.huffer.assignment.jaligner.matrix.Matrix;
+import com.huffer.assignment.jaligner.util.Commons;
 
 import java.text.DecimalFormat;
 

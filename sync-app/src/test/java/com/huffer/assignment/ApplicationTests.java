@@ -1,4 +1,4 @@
-package com.huffer.java;
+package com.huffer.assignment;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

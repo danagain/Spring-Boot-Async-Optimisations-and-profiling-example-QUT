@@ -5,7 +5,6 @@ import edu.au.jacobi.pattern.Match;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
 import org.springframework.core.task.TaskExecutor;
 import org.springframework.stereotype.Component;
 import java.io.IOException;
@@ -22,28 +21,22 @@ public class ThreadMethods {
     @Autowired
     private TaskExecutor taskExecutor;
 
-    @Autowired
-    private ApplicationContext applicationContext;
-
-    @Autowired
-    private Sequential sequential;
-
     void geneMatchingAsync(Gene referenceGene, GenbankRecord record) {
-        System.out.println(referenceGene.name);
-        for (Gene gene : record.genes)
-            if (Homologous(gene.sequence, referenceGene.sequence))
-            {
-                NucleotideSequence upStreamRegion = GetUpstreamRegion(record.nucleotides, gene);
-                LOGGER.debug(upStreamRegion.toString());
-                Match prediction = PredictPromoter(upStreamRegion);
-                    if (prediction != null)
-                    {
-                        updateConcensus(referenceGene, prediction);
-
-                    }
-            }
+        LOGGER.info(referenceGene.name);
+        for (Gene gene : record.genes) {
+//            if (Homologous(gene.sequence, referenceGene.sequence)) {
+//                NucleotideSequence upStreamRegion = GetUpstreamRegion(record.nucleotides, gene);
+//                LOGGER.debug(upStreamRegion.toString());
+//                Match prediction = PredictPromoter(upStreamRegion);
+//                if (prediction != null) {
+//                    updateConcensus(referenceGene, prediction);
+//                }
+//            }
+            Thread t = new Thread(new BankMatchingThread(referenceGene, gene, record,this));
+            taskExecutor.execute(t);
+        }
         for (Map.Entry<String, Sigma70Consensus> entry : consensus.entrySet()){
-            System.out.println(entry.getKey() + " " + entry.getValue());
+            LOGGER.info(entry.getKey() + " " + entry.getValue());
         }
     }
 

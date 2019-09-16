@@ -1,7 +1,7 @@
-package com.huffer.java.jaligner;
+package com.huffer.assignment.jaligner;
 
 
-import com.huffer.java.jaligner.matrix.Matrix;
+import com.huffer.assignment.jaligner.matrix.Matrix;
 
 public class BLOSUM62
 {   

@@ -1,5 +1,5 @@
 /*
- * $Id: Commons.java,v 1.27 2005/04/18 05:37:52 ahmed Exp $
+ * $Id: Commons.assignment,v 1.27 2005/04/18 05:37:52 ahmed Exp $
  * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -16,7 +16,7 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-package com.huffer.java.jaligner.util;
+package com.huffer.assignment.jaligner.util;
 
 import java.net.JarURLConnection;
 import java.net.URL;

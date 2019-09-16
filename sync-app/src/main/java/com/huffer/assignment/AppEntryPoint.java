@@ -1,7 +1,7 @@
-package com.huffer.java;
+package com.huffer.assignment;
 
 
-import com.huffer.java.qut.Sequential;
+import com.huffer.assignment.qut.Sequential;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
@@ -9,7 +9,6 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 @Component
 public class AppEntryPoint implements ApplicationListener<ApplicationReadyEvent> {

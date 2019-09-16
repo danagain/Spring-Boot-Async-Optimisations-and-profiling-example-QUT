@@ -1,10 +1,8 @@
-package com.huffer.java.qut;
+package com.huffer.assignment.qut;
 
 import edu.au.jacobi.pattern.Match;
 import edu.au.jacobi.pattern.Series;
 import edu.au.jacobi.sequence.Sequence;
-import edu.au.jacobi.sequence.list.FeatureList;
-import java.util.Comparator;
 
 class BioPatterns
 {

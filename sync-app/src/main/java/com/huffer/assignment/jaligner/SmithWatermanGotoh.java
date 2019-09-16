@@ -1,5 +1,5 @@
 /*
- * $Id: SmithWatermanGotoh.java,v 1.18 2005/04/03 19:38:21 ahmed Exp $
+ * $Id: SmithWatermanGotoh.assignment,v 1.18 2005/04/03 19:38:21 ahmed Exp $
  * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -16,10 +16,10 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-package com.huffer.java.jaligner;
+package com.huffer.assignment.jaligner;
 
 
-import com.huffer.java.jaligner.matrix.Matrix;
+import com.huffer.assignment.jaligner.matrix.Matrix;
 
 /**
  * An implementation of the Smith-Waterman algorithm with Gotoh's improvement
